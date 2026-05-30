@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CV — Shaoxin Lin</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar"><div class="inner">
+  <span class="brand">Shaoxin Lin</span>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="publications.html">Publications</a>
+    <a href="cv.html" class="active">CV</a>
+  </nav>
+</div></div>
+
+<div class="wrap">
+  <aside class="sidebar">
+    <div class="avatar"><img src="assets/profile.jpg" alt="Shaoxin Lin" onerror="this.remove()">SL</div>
+    <h1>Shaoxin Lin</h1>
+    <div class="zh">林绍鑫</div>
+    <div class="role">AI Algorithm Researcher</div>
+    <div class="org">Huawei</div>
+    <ul class="links">
+      <li><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3V5zm2 2v.4l7 4.5 7-4.5V7H5zm14 2.7-7 4.5-7-4.5V17h14V9.7z"/></svg><a href="mailto:skyaward@icloud.com">skyaward@icloud.com</a></li>
+      <li><svg viewBox="0 0 24 24"><path d="M12 3 1 9l11 6 9-4.9V17h2V9L12 3zM5 13.2V17c0 1.7 3.1 3 7 3s7-1.3 7-3v-3.8l-7 3.8-7-3.8z"/></svg><a href="https://scholar.google.com/" rel="me">Google Scholar</a></li>
+      <li><svg viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg><a href="https://github.com/linshaoxin-maker">GitHub</a></li>
+      <li><svg viewBox="0 0 24 24"><path d="M6 2h8l4 4v16H6V2zm7 1.5V7h3.5L13 3.5zM8 11h8v1.5H8V11zm0 3h8v1.5H8V14zm0 3h5v1.5H8V17z"/></svg><a href="cv.html">Curriculum Vitae</a></li>
+    </ul>
+  </aside>
+
+  <main class="main">
+    <section>
+      <h2>Education</h2>
+      <div class="cv-item">
+        <div class="head"><span class="where">Nankai University</span><span class="when">2020 &ndash; 2023</span></div>
+        <div class="what">M.S. in Natural Language Processing</div>
+      </div>
+      <div class="cv-item">
+        <div class="head"><span class="where">Harbin Engineering University</span><span class="when">2016 &ndash; 2020</span></div>
+        <div class="what">B.E. in Control Engineering</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="cv-item">
+        <div class="head"><span class="where">Huawei &middot; AI Algorithm Researcher</span><span class="when">2025.5 &ndash; 2026.6</span></div>
+        <div class="what">Terminal IT Software Equipment Department</div>
+        <ul>
+          <li>Led the design and delivery of the "Gewu" multi-agent alarm-repair system (plugin / CLI / platform entry points); raised Top-12 rule repair accuracy to 85%+. Output: 1 CCF-A paper (ICSE) and 2 patents.</li>
+          <li>Built the Gewu multi-agent platform and AgentSDK, orchestrating 8+ agent services through a Multi-Agent architecture.</li>
+          <li>Built project-level memory and a Trae-Agent-based loop (reproduce &rarr; locate &rarr; fix &rarr; test): 41.7% end-to-end issue resolution and 62.5% fix accuracy on internal Java repositories.</li>
+        </ul>
+      </div>
+      <div class="cv-item">
+        <div class="head"><span class="where">Huawei Cloud &middot; Algorithm Engineer</span><span class="when">2023.7 &ndash; 2025.5</span></div>
+        <div class="what">PaaS Innovation Lab</div>
+        <ul>
+          <li>Secure code generation (RAG + DPO): cut memory-leak vulnerability rate by 68%; 7B post-training reduced vulnerability rate ~26% across five languages (C/C++/Java/&hellip;).</li>
+          <li>Code-defect detection agent (deployed on the Optical product line): reduced sensitive-info false-positive rate from 99% to 35% (89% recall) on 10M-line repositories.</li>
+          <li>Led LLM-based automated repair end-to-end (data &rarr; training &rarr; deployment &rarr; plugin &rarr; evaluation): CodeLlama-13B fine-tuning reached HE Pass@1 71.0 / Repair 69.3 (+27.7 / +47.8 pts); CodeLlama-34B HumanEval 76.8 (+35.1 pts), surpassing GitHub Copilot by ~30% on the same set.</li>
+          <li>Designed the TRDPO algorithm (addressing DPO's limitations); shipped an alarm auto-clearing plugin on Qwen-2.5 reaching 50%+ repair / 80%+ accuracy in HarmonyOS scenarios. Co-authored 1 ACL and 1 TOSEM submission.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Python</li><li>PyTorch</li><li>vLLM</li><li>LangGraph</li>
+        <li>Pretraining</li><li>Fine-tuning</li><li>Reinforcement Learning (RLHF)</li><li>DPO / Post-training</li><li>RAG</li>
+        <li>Multi-Agent Systems</li><li>Claude Code</li><li>Codex</li><li>OpenCode</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Honors &amp; Awards</h2>
+      <ul class="honors">
+        <li><span>National Second Prize, China Undergraduate Mathematical Contest in Modeling</span><span class="yr">2018.09</span></li>
+        <li><span>First Prize (Heilongjiang), Northeast China Optoelectronic Design Competition</span><span class="yr">2018.04</span></li>
+        <li><span>First Prize (Heilongjiang), Chinese Mathematics Competitions</span><span class="yr">2017.12</span></li>
+        <li><span>First Prize, Northeast China Mathematical Modeling Contest</span><span class="yr">2017.10</span></li>
+        <li><span>Chen Geng Scholarship, Harbin Engineering University</span><span class="yr"></span></li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<div class="footer">&copy; 2026 Shaoxin Lin &middot; Hosted on GitHub Pages</div>
+
+</body>
+</html>

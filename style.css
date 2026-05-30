@@ -1,0 +1,75 @@
+:root{
+  --accent:#2a6f97;--accent-dark:#1d4e6b;--text:#222;--muted:#6a6a6a;
+  --line:#e6e6e6;--bg:#fff;--chip:#f3f6f8;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif;color:var(--text);background:var(--bg);line-height:1.65;font-size:16px;}
+a{color:var(--accent);text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+.topbar{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:20;}
+.topbar .inner{max-width:1040px;margin:0 auto;padding:14px 24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;}
+.brand{font-weight:700;color:var(--text);font-size:17px;}
+.nav a{margin-left:22px;color:var(--muted);font-weight:500;}
+.nav a.active,.nav a:hover{color:var(--accent);text-decoration:none;}
+
+.wrap{max-width:1040px;margin:0 auto;padding:34px 24px 50px;display:flex;gap:46px;align-items:flex-start;}
+.sidebar{width:250px;flex-shrink:0;text-align:center;position:sticky;top:80px;}
+.avatar{position:relative;width:178px;height:178px;border-radius:50%;margin:0 auto 18px;background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:#fff;display:flex;align-items:center;justify-content:center;font-size:58px;font-weight:600;overflow:hidden;}
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.sidebar h1{font-size:22px;margin:6px 0 1px;}
+.sidebar .zh{color:var(--muted);font-size:15px;margin-bottom:10px;}
+.sidebar .role{font-size:14.5px;margin:1px 0;}
+.sidebar .org{font-size:14.5px;color:var(--muted);margin-bottom:16px;}
+.links{list-style:none;padding:0;margin:0 auto;text-align:left;display:inline-block;}
+.links li{margin:9px 0;font-size:14.5px;display:flex;align-items:center;gap:9px;}
+.links svg{width:17px;height:17px;fill:var(--muted);flex-shrink:0;}
+.links a{word-break:break-all;}
+
+.main{flex:1;min-width:0;}
+.main h2{font-size:20px;margin:0 0 14px;padding-bottom:7px;border-bottom:2px solid var(--line);}
+.main section{margin-bottom:34px;}
+.lead{font-size:16px;}
+
+.interests{padding-left:0;list-style:none;margin:0;}
+.interests li{padding:5px 0 5px 22px;position:relative;}
+.interests li:before{content:"\25B9";position:absolute;left:0;color:var(--accent);}
+
+.news{list-style:none;padding:0;margin:0;}
+.news li{display:flex;gap:14px;padding:8px 0;border-bottom:1px solid var(--line);font-size:15px;}
+.news .date{color:var(--accent);font-weight:600;white-space:nowrap;min-width:54px;}
+
+.pub{margin-bottom:20px;}
+.pub .title{font-weight:600;color:var(--text);display:block;}
+.pub .title a{color:var(--text);}
+.pub .title a:hover{color:var(--accent);}
+.pub .authors{font-size:14.5px;}
+.pub .me{font-weight:700;}
+.pub .venue{font-size:14px;color:var(--muted);font-style:italic;}
+.pub .tags{margin-top:5px;}
+.pub .tags a{display:inline-block;font-size:12.5px;border:1px solid var(--line);border-radius:4px;padding:1px 9px;margin:0 6px 0 0;color:var(--accent);}
+.yeargroup{font-size:15px;font-weight:700;color:var(--accent);margin:0 0 12px;}
+
+.cv-item{margin-bottom:20px;}
+.cv-item .head{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;align-items:baseline;}
+.cv-item .head .where{font-weight:600;font-size:16px;}
+.cv-item .head .when{color:var(--muted);font-size:14px;white-space:nowrap;}
+.cv-item .what{color:var(--muted);font-size:14.5px;margin:1px 0 4px;}
+.cv-item ul{margin:6px 0 0;padding-left:20px;}
+.cv-item ul li{margin:4px 0;}
+
+.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;list-style:none;margin:0;}
+.skills li{background:var(--chip);border:1px solid var(--line);border-radius:5px;padding:4px 11px;font-size:14px;}
+
+.honors{padding-left:0;list-style:none;margin:0;}
+.honors li{padding:7px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;}
+.honors .yr{color:var(--muted);font-size:14px;white-space:nowrap;}
+
+.footer{max-width:1040px;margin:0 auto;padding:18px 24px 46px;color:var(--muted);font-size:13px;text-align:center;}
+
+@media (max-width:760px){
+  .wrap{flex-direction:column;gap:28px;}
+  .sidebar{width:100%;position:static;}
+  .nav a{margin-left:14px;}
+}
