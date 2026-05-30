@@ -17,7 +17,7 @@ a:hover{text-decoration:underline;}
 .wrap{max-width:1040px;margin:0 auto;padding:34px 24px 50px;display:flex;gap:46px;align-items:flex-start;}
 .sidebar{width:250px;flex-shrink:0;text-align:center;position:sticky;top:80px;}
 .avatar{position:relative;width:178px;height:178px;border-radius:50%;margin:0 auto 18px;background:linear-gradient(135deg,var(--accent),var(--accent-dark));color:#fff;display:flex;align-items:center;justify-content:center;font-size:58px;font-weight:600;overflow:hidden;}
-.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;}
 .sidebar h1{font-size:22px;margin:6px 0 1px;}
 .sidebar .zh{color:var(--muted);font-size:15px;margin-bottom:10px;}
 .sidebar .role{font-size:14.5px;margin:1px 0;}
